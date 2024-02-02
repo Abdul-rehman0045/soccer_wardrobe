@@ -1,0 +1,42 @@
+name: soccer_fan_wardrobe
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.1
+  fluttertoast: ^8.2.4
+  audioplayers: ^5.2.1
+  flutter_launcher_icons: ^0.13.1
+
+
+  cupertino_icons: ^1.0.2
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/sounds/
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/launch_icon.png"
+
