@@ -8,5 +8,6 @@
     "real_madrid":"Real Madrid",
     "liver_pool":"LiverPool",
     "barcelona":"Barcelona",
-    "language":"Language"
+    "language":"Language:",
+    "sound":"Sound"
   }

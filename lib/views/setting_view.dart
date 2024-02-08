@@ -55,7 +55,7 @@ class SettingView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                             AppLocalizations.of(AppColors.navState.currentContext!)!.language,
+                      AppLocalizations.of(AppColors.navState.currentContext!)!.language,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
@@ -99,7 +99,7 @@ class SettingView extends StatelessWidget {
                           onTap: () {
                             final provider = Provider.of<LocaleProvider>(context, listen: false);
                             provider.setLocale(
-                              Locale("en", "GB"),
+                              Locale('en'),
                             );
                             // Fluttertoast.showToast(msg: "Language Changed");
                             Navigator.pop(context);
@@ -131,7 +131,29 @@ class SettingView extends StatelessWidget {
                         isSoundOn = !isSoundOn;
                         isSoundOn ? Audio.audioPlayer.stop() : Audio.audioPlayer.resume();
                       },
-                      child: Image.asset(Assets.soundBtn),
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 100,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            width: 5,
+                            color: AppColors.kGreenTextColor,
+                          ),
+                          borderRadius: BorderRadius.all(
+                            Radius.elliptical(150, 100),
+                          ),
+                        ),
+                        child: Text(
+                          AppLocalizations.of(AppColors.navState.currentContext!)!.sound,
+                          style: TextStyle(
+                            fontSize: 26,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.kGreenTextColor,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                      ),
                     ),
                     Spacer(),
                     InkWell(
@@ -150,7 +172,7 @@ class SettingView extends StatelessWidget {
                         ),
                         padding: EdgeInsets.symmetric(vertical: 10),
                         child: Text(
-                             AppLocalizations.of(AppColors.navState.currentContext!)!.back_to_main_menu,
+                          AppLocalizations.of(AppColors.navState.currentContext!)!.back_to_main_menu,
                           style: TextStyle(
                             fontSize: 26,
                             fontWeight: FontWeight.w700,
