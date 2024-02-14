@@ -1,4 +1,4 @@
-package com.game1.soccer_fan_wardrobe
+package com.soccerfanwardrobe.app
 
 import io.flutter.embedding.android.FlutterActivity
 

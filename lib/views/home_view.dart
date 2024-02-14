@@ -101,7 +101,7 @@ class _HomeViewState extends State<HomeView> {
                                     Transform.translate(
                                       offset: Offset(0, -15),
                                       child: Text(
-                             AppLocalizations.of(AppColors.navState.currentContext!)!.real_madrid,
+                                        AppLocalizations.of(AppColors.navState.currentContext!)!.real_madrid.toUpperCase(),
                                         style: TextStyle(
                                           color: AppColors.kTextColor,
                                           fontSize: 20,
@@ -163,7 +163,7 @@ class _HomeViewState extends State<HomeView> {
                                     Transform.translate(
                                       offset: Offset(0, -15),
                                       child: Text(
-                             AppLocalizations.of(AppColors.navState.currentContext!)!.liver_pool,
+                                        AppLocalizations.of(AppColors.navState.currentContext!)!.liver_pool.toUpperCase(),
                                         style: TextStyle(
                                           color: AppColors.kTextColor,
                                           fontSize: 20,
@@ -225,7 +225,7 @@ class _HomeViewState extends State<HomeView> {
                                     Transform.translate(
                                       offset: Offset(0, -15),
                                       child: Text(
-                             AppLocalizations.of(AppColors.navState.currentContext!)!.barcelona,
+                                        AppLocalizations.of(AppColors.navState.currentContext!)!.barcelona.toUpperCase(),
                                         style: TextStyle(
                                           color: AppColors.kTextColor,
                                           fontSize: 20,

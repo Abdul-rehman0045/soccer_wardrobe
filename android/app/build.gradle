@@ -28,7 +28,7 @@ def keystoreProperties = new Properties()
    }
 
 android {
-    namespace "com.game1.soccer_fan_wardrobe"
+    namespace "com.soccerfanwardrobe.app"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -47,7 +47,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.game1.soccer_fan_wardrobe"
+        applicationId "com.soccerfanwardrobe.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 21
@@ -71,7 +71,10 @@ android {
    }
    splits {
         abi {
-            exclude 'x86_64'
+            enable true
+            reset()
+            include "arm64-v8a", "armeabi-v7a", "x86"
+            universalApk true
         }
     }
 }
